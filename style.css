@@ -1,0 +1,650 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    }
+
+/*Estilos del body*/
+
+body {
+        font-family: 'Rubik', sans-serif;
+        color: #b10909;
+        background-color: #8197b4;
+                
+    }
+
+
+    @media screen and (min-width: 300px) and (max-width: 980px){
+        
+        .card-text{
+            display: none;
+        }
+
+        .redesS{
+            display: none;
+        }
+
+        .pesaInicio{
+            display: none;
+        }
+
+        
+    }
+    
+    
+
+h2{
+    font-size: 30px;
+    color: #b10909;
+    /* color: rgb(211, 3, 3); */
+    padding-right: 10px;
+    font-weight: bolder;
+    }
+
+/*header con boostrap*/
+
+.card-img-overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.card-title{
+    
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    background-color: rgba(172, 172, 172, 0.815);
+    font-family: 'Rubik', sans-serif;
+    
+    }
+
+
+
+.card-text{
+
+    
+    font-weight: bold;
+    background-color: rgba(172, 172, 172, 0.815);
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    
+    }
+
+
+/* Barra de navegación */
+
+.barraNav{
+
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 850px){
+   
+    ul{
+
+        flex-wrap: wrap;
+    }
+
+}
+
+nav{ 
+    font-size: 20px;
+    line-height: 35px;
+    width: 80%;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px; 
+    background-color:#639ae2;
+                               
+}  
+
+
+ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+li {
+    width: 100%;
+    list-style-image: url(imagenes/weight-red-small25px.png);
+    list-style-position: inside;
+    /* justify-content: space-between;  No me lo toma. Quería que CONTACTO quede bien a la derecha*/ 
+    
+}
+
+.accesoDirNav:hover{
+    color: #b10909;
+    
+}
+
+/*esto es lo que te comentaba que no me salió del todo*/
+
+/* .barraNav nav li:hover{
+    width: 70%;
+    line-height: 40px;
+    background: url(imagenes/weight-red-small25px.png) none;
+    background: url(imagenes/weight-red-small60px.png) no-repeat;
+    
+
+} */
+
+
+.accesoDirNav{      
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+         
+}
+
+
+
+/*index*/
+
+@media screen and (max-width: 500px) {
+
+    .PrincipalIndex{
+
+        flex-wrap: wrap;
+
+    }
+
+}
+
+.PrincipalIndex{
+    padding:  10px;
+    margin: 60px 20px 60px 20px;
+    background-color: rgba(255, 255, 255, 0.514);
+    display: flex;
+    justify-content: space-between;
+                
+}
+
+.diVideoPrincipal{
+    width: 90%;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+   
+}
+
+.videoEntrenamiento{
+    width: 80%;
+}
+
+.textosPrincipal{
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+   }
+
+.tituloPrincipal{
+    width:auto;
+    margin: 10px;
+    padding: 10px;
+    text-align: right;
+    
+    
+}
+
+.FraseMotivadora{
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 40px;
+    width:auto;
+    margin: 10px;
+    padding: 10px; 
+    text-align: right;
+    
+    }
+
+    @media screen and (max-width: 850px){
+
+    .FraseMotivadora{
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+        width:auto;
+        margin: 5px;
+        padding: 5px; 
+        text-align: right;
+        
+        }
+
+    h2{
+        font-size: 15px;
+    }
+        
+    }
+
+   
+      
+      @keyframes shake{
+        0%{
+          transform: translateX(0)
+        }
+        25%{
+          transform: translateX(25px);
+        }
+          
+        50%{
+          transform: translateX(-25px);
+        }
+        100%{
+          transform: translateX(0px);
+        }
+      }
+
+
+    /*ESTILOS DE ENTRENAMIENTO HTML*/
+
+    @media screen and (max-width: 500px) {
+
+        .seccion{
+
+            flex-wrap: wrap;
+
+        }
+
+    }
+
+.entrenamiento{
+    padding:  10px;
+    margin: 60px 20px 60px 20px;
+    background-color: rgba(255, 255, 255, 0.514);
+    display: flex;
+    justify-content: space-between;
+                
+   }
+
+.divTextoEntrenamiento{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}   
+
+.tituloEntrenamiento{
+    text-align: right;
+}   
+
+.parrafoEntrenamiento{
+
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: right;
+    
+} 
+
+.imagenEntrenamiento{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    object-fit: contain;
+
+}   
+
+
+
+/*ESTILOS DE RUTINAS HTML*/
+
+.rutinas{
+    padding:  10px;
+    margin: 60px 20px 60px 20px;
+    background-color: rgba(255, 255, 255, 0.514);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.divTextoRutinas{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.parrafoRutinas{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+}
+
+.fotoRutinas{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    object-fit: contain;
+
+}
+
+/*ESTILOS DE DISCIPLINAS HTML*/
+
+.disciplinas{
+
+    padding:  10px;
+    margin: 60px 20px 60px 20px;
+    background-color: rgba(255, 255, 255, 0.514);
+    display: flex;
+    justify-content: space-between;
+    
+}    
+
+.divTextosDisciplinas{
+   
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.tituloDisciplinas{
+
+    text-align: right;
+}
+
+.fotoDisciplinas{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    object-fit: contain;
+
+}
+
+.parrafoDis{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: right;
+
+}
+
+/*ESTILOS DE DIETA HTML*/
+
+.dieta{
+
+    padding:  10px;
+    margin: 60px 20px 60px 20px;
+    background-color: rgba(255, 255, 255, 0.514);
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.divTextosDieta{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.parrafoDieta{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    
+}
+
+.fotoComidaSana{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    object-fit: contain;
+    
+}
+
+/*COMIENZO SOBRE MI HTML*/
+
+.AcercaDeMi{
+    padding: 40px 0px 40px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.514);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.textosAcercaDeMi{
+
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.parrafoSeba{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: right;
+
+}
+
+.tituloAcercaDeMi{
+
+    text-align: right;
+
+}
+
+.fotoSeba{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    object-fit: contain;
+  }
+  
+
+
+
+/*Estilos mis clases*/
+
+
+.misClases{
+
+    padding: 40px 10px 40px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.514);
+    display: flex;
+    justify-content: center;
+}
+
+.imagenMisClases{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    object-fit: contain;
+    
+}
+
+.textosMisClases{
+
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.parrafoMisClases{
+
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+
+}
+
+.tituloMisClases{
+
+    text-align: left;
+
+}
+
+/*Grid Mis Clases*/
+
+#grid{
+    display: grid;
+    grid-template-columns: 0,7fr 1,3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px; 
+    grid-template-areas: 
+    "alAireLibre ClientesSatisfechos"
+    "enTuGimnasio ClientesSatisfechos";
+
+}
+
+.alAireLibre{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-area: alAireLibre;
+
+}
+
+.fotoAlAireLibre{
+    width: 60%;
+    align-self: center;
+    
+    
+}
+
+.enTuGimnasio{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around;
+  grid-area: enTuGimnasio;
+  
+}
+
+.fotoEnTuGym{
+
+    width: 60%;
+    align-self: center;
+
+}
+
+
+.ClientesSatisfechos {
+    display: flex;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.8fr 1,2fr 1fr 1fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+      "titulo titulo titulo"
+      "foto1 foto2 foto3"
+      "foto4 foto5 foto6"
+      "foto7 foto8 foto9"; 
+    grid-area: ClientesSatisfechos; 
+  }
+
+  .titulo { grid-area: titulo;
+}
+
+  .foto1 { grid-area: foto1;
+          width: 100%;
+}
+
+  .foto2 { grid-area: foto2; 
+        width: 100%;
+}
+  .foto3 { grid-area: foto3; 
+    width: 100%;
+}
+  .foto4 { grid-area: foto4; 
+         width: 100%;
+}
+  .foto5 { grid-area: foto5;
+    width: 100%;
+}
+  .foto6 { grid-area: foto6; 
+    width: 100%;
+}
+  .foto7 { grid-area: foto7;
+        width: 100%;
+}
+  .foto8 { grid-area: foto8;
+    width: 100%;
+ }
+  .foto9 { grid-area: foto9; 
+    width: 100%;
+}
+
+
+@media screen and (max-width: 980px){
+
+    .foto2{
+
+        display: none;
+    }
+
+    .foto3{
+        display: none;
+    }
+
+    .foto5{
+        display: none;
+    }
+
+    .foto6{
+        display: none;
+    }
+
+    .foto8{
+        display: none;
+    }
+
+    .foto9{
+        display: none;
+    }
+}
+    
+
