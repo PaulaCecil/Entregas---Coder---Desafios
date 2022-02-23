@@ -1,0 +1,206 @@
+@import "../base/estilosgrales";
+@import "../base/listas";
+
+
+
+#carouselExampleFade{
+
+    width: 40%;
+
+}
+
+
+.PrincipalIndex{
+
+    padding:  10px;
+    margin: 60px 20px 60px 20px;
+    background-color: nth($colores, 8);
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 500px) {
+
+                flex-wrap: wrap;
+    
+        }  
+
+    .diVideoPrincipal{
+        width: 90%;
+        height: 100%;
+        margin: 10px;
+        padding: 10px;
+
+        .videoEntrenamiento{
+            width: 80%;
+        }
+       
+    }
+   
+       
+    .textosPrincipal{
+        width: 60%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .tituloPrincipal{
+            width:auto;
+            margin: 10px;
+            padding: 10px;
+            text-align: right;
+            
+            
+        }
+        
+        .FraseMotivadora{
+
+            font-size: 35px;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 40px;
+            width:auto;
+            margin: 10px;
+            padding: 10px; 
+            text-align: right;
+
+            @media screen and (max-width: 850px){
+
+                    font-size: 25px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    width:auto;
+                    margin: 5px;
+                    padding: 5px; 
+                    text-align: right;
+                    
+                    }
+                         
+        
+            }
+        
+       }
+         
+
+}
+
+
+/*entrenamiento*/
+
+.seccionEntrenamiento{
+
+    padding:  10px;
+    margin: 60px 20px 60px 20px;
+    background-color: nth($colores, 8);
+    display: flex;
+    justify-content: space-between;
+
+
+    @media screen and (max-width: 500px) {
+
+         flex-wrap: wrap;
+
+        }
+
+        .divFotoEntrenamiento{
+
+            .imagenEntrenamiento{
+
+                width: 80%;
+                height: auto;
+                padding: 10px;
+                margin: 10px;
+                object-fit: contain;
+
+
+            }
+        }
+
+        .divTextoEntrenamiento{
+
+            width: 80%;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .tituloEntrenamiento{
+
+                text-align: right;
+
+            }
+
+            .parrafoEntrenamiento{
+                width: auto;
+                height: auto;
+                font-size: 20px;
+                padding: 10px;
+                margin: 10px;
+                text-align: right;
+            }
+        }
+}
+
+/*rutinas*/
+
+
+
+/*Disciplinas*/
+
+.seccionDisciplinas{
+
+    padding:  10px;
+    margin: 60px 20px 60px 20px;
+    background-color: nth($colores, 8);
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 500px) {
+
+        flex-wrap: wrap;
+
+    }
+
+    .divFotoDisciplinas{
+
+        #carouselExampleFade{
+        
+        width: 50%;
+
+
+
+        }
+    }
+
+    .divTextosDisciplinas{
+
+        width: 80%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+            .tituloDisciplinas{
+            
+                text-align: right;    
+
+            }
+
+            .parrafoDis{
+
+                width: auto;
+                height: auto;
+                font-size: 20px;
+                padding: 10px;
+                margin: 10px;
+                text-align: right;
+
+            }
+
+    }
+
+}   
+

@@ -1,0 +1,23 @@
+@import 'listas';
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: nth($colores, 1);
+    background-color: nth($colores, 6);
+            
+}   
+
+
+h2{
+    font-size: 30px;
+    color: nth($colores, 1);
+    padding-right: 10px;
+    font-weight: bolder;
+    
+    @media screen and (max-width: 850px){
+    font-size: 15px;
+    
+    }
+    
+}

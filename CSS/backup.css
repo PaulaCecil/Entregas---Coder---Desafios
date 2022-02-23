@@ -261,12 +261,14 @@ li {
         }
       }
 
+      /**/
+
 
     /*ESTILOS DE ENTRENAMIENTO HTML*/
 
     @media screen and (max-width: 500px) {
 
-        .seccion{
+        .seccionEntrenamiento{
 
             flex-wrap: wrap;
 

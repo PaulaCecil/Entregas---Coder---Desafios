@@ -1,0 +1,211 @@
+#header .card .card-img-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#header .card .card-img-overlay .card-title {
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+  background-color: rgba(172, 172, 172, 0.815);
+  font-family: "Rubik", sans-serif;
+  transition: 0.3s;
+}
+#header .card .card-img-overlay .card-title:hover {
+  background-color: rgba(221, 220, 220, 0.815);
+  color: #0c0cc2;
+}
+#header .card .card-img-overlay .card-text {
+  font-weight: bold;
+  background-color: rgba(172, 172, 172, 0.815);
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  color: #b10909;
+  transition: 0.3s;
+}
+#header .card .card-img-overlay .card-text:hover {
+  background-color: rgba(221, 220, 220, 0.815);
+  color: #0c0cc2;
+}
+@media screen and (min-width: 300px) and (max-width: 980px) {
+  #header .card .card-img-overlay .card-text {
+    display: none;
+  }
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #b10909;
+  background-color: #639ae2;
+}
+
+h2 {
+  font-size: 30px;
+  color: #b10909;
+  padding-right: 10px;
+  font-weight: bolder;
+}
+@media screen and (max-width: 850px) {
+  h2 {
+    font-size: 15px;
+  }
+}
+
+#carouselExampleFade {
+  width: 40%;
+}
+
+.PrincipalIndex {
+  padding: 10px;
+  margin: 60px 20px 60px 20px;
+  background-color: rgba(255, 255, 255, 0.514);
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .PrincipalIndex {
+    flex-wrap: wrap;
+  }
+}
+.PrincipalIndex .diVideoPrincipal {
+  width: 90%;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+.PrincipalIndex .diVideoPrincipal .videoEntrenamiento {
+  width: 80%;
+}
+.PrincipalIndex .textosPrincipal {
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.PrincipalIndex .textosPrincipal .tituloPrincipal {
+  width: auto;
+  margin: 10px;
+  padding: 10px;
+  text-align: right;
+}
+.PrincipalIndex .textosPrincipal .FraseMotivadora {
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 40px;
+  width: auto;
+  margin: 10px;
+  padding: 10px;
+  text-align: right;
+}
+@media screen and (max-width: 850px) {
+  .PrincipalIndex .textosPrincipal .FraseMotivadora {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+    text-align: right;
+  }
+}
+
+/*entrenamiento*/
+.seccionEntrenamiento {
+  padding: 10px;
+  margin: 60px 20px 60px 20px;
+  background-color: rgba(255, 255, 255, 0.514);
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .seccionEntrenamiento {
+    flex-wrap: wrap;
+  }
+}
+.seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento {
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  object-fit: contain;
+}
+.seccionEntrenamiento .divTextoEntrenamiento {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.seccionEntrenamiento .divTextoEntrenamiento .tituloEntrenamiento {
+  text-align: right;
+}
+.seccionEntrenamiento .divTextoEntrenamiento .parrafoEntrenamiento {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  text-align: right;
+}
+
+/*rutinas*/
+/*Disciplinas*/
+.seccionDisciplinas {
+  padding: 10px;
+  margin: 60px 20px 60px 20px;
+  background-color: rgba(255, 255, 255, 0.514);
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  .seccionDisciplinas {
+    flex-wrap: wrap;
+  }
+}
+.seccionDisciplinas .divFotoDisciplinas #carouselExampleFade {
+  width: 50%;
+}
+.seccionDisciplinas .divTextosDisciplinas {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.seccionDisciplinas .divTextosDisciplinas .tituloDisciplinas {
+  text-align: right;
+}
+.seccionDisciplinas .divTextosDisciplinas .parrafoDis {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  text-align: right;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #b10909;
+  background-color: #639ae2;
+}
+
+h2 {
+  font-size: 30px;
+  color: #b10909;
+  padding-right: 10px;
+  font-weight: bolder;
+}
+@media screen and (max-width: 850px) {
+  h2 {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
