@@ -190,6 +190,208 @@ h2 {
   text-align: right;
 }
 
+/*Rutinas*/
+.seccionRutinas {
+  padding: 10px;
+  margin: 60px 20px 60px 20px;
+  background-color: rgba(255, 255, 255, 0.514);
+  display: flex;
+  justify-content: space-between;
+}
+.seccionRutinas .divTextoRutinas {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.seccionRutinas .divTextoRutinas .parrafoRutinas {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+}
+.seccionRutinas .divFotoRutinas .fotoRutinas {
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  object-fit: contain;
+}
+
+/*Dieta*/
+.seccionDieta {
+  padding: 10px;
+  margin: 60px 20px 60px 20px;
+  background-color: rgba(255, 255, 255, 0.514);
+  display: flex;
+  justify-content: space-between;
+}
+.seccionDieta .divTextosDieta {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.seccionDieta .divTextosDieta .parrafoDieta {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+}
+.seccionDieta .divFotoComidaSana .fotoComidaSana {
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  object-fit: contain;
+}
+
+/*acerca de mi*/
+.seccionAcercaDeMi {
+  padding: 40px 0px 40px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.514);
+  display: flex;
+  justify-content: space-between;
+}
+.seccionAcercaDeMi .divFotoSeba .fotoSeba {
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  object-fit: contain;
+}
+.seccionAcercaDeMi .textosAcercaDeMi {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.seccionAcercaDeMi .textosAcercaDeMi .tituloAcercaDeMi {
+  text-align: right;
+}
+/*mis clases*/
+.seccionMisClases {
+  padding: 40px 10px 40px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.514);
+  display: flex;
+  justify-content: center;
+}
+.seccionMisClases #grid {
+  display: grid;
+  grid-template-columns: 0, 7fr 1, 3fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas: "alAireLibre ClientesSatisfechos" "enTuGimnasio ClientesSatisfechos";
+}
+.seccionMisClases #grid .alAireLibre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-area: alAireLibre;
+}
+.seccionMisClases #grid .alAireLibre .fotoAlAireLibre {
+  width: 60%;
+  align-self: center;
+}
+.seccionMisClases #grid .enTuGimnasio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-area: enTuGimnasio;
+}
+.seccionMisClases #grid .enTuGimnasio .fotoEnTuGym {
+  width: 60%;
+  align-self: center;
+}
+.seccionMisClases #grid .ClientesSatisfechos {
+  display: flex;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.8fr 1, 2fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas: "titulo titulo titulo" "foto1 foto2 foto3" "foto4 foto5 foto6" "foto7 foto8 foto9";
+  grid-area: ClientesSatisfechos;
+}
+.seccionMisClases #grid .ClientesSatisfechos .foto1 {
+  grid-area: foto1;
+  width: 100%;
+}
+.seccionMisClases #grid .ClientesSatisfechos .foto2 {
+  grid-area: foto2;
+  width: 100%;
+}
+@media screen and (max-width: 980px) {
+  .seccionMisClases #grid .ClientesSatisfechos .foto2 {
+    display: none;
+  }
+}
+.seccionMisClases #grid .ClientesSatisfechos .foto3 {
+  grid-area: foto3;
+  width: 100%;
+}
+@media screen and (max-width: 980px) {
+  .seccionMisClases #grid .ClientesSatisfechos .foto3 {
+    display: none;
+  }
+}
+.seccionMisClases #grid .ClientesSatisfechos .foto4 {
+  grid-area: foto4;
+  width: 100%;
+}
+.seccionMisClases #grid .ClientesSatisfechos .foto5 {
+  grid-area: foto5;
+  width: 100%;
+}
+@media screen and (max-width: 980px) {
+  .seccionMisClases #grid .ClientesSatisfechos .foto5 {
+    display: none;
+  }
+}
+.seccionMisClases #grid .ClientesSatisfechos .foto6 {
+  grid-area: foto6;
+  width: 100%;
+}
+@media screen and (max-width: 980px) {
+  .seccionMisClases #grid .ClientesSatisfechos .foto6 {
+    display: none;
+  }
+}
+.seccionMisClases #grid .ClientesSatisfechos .foto7 {
+  grid-area: foto7;
+  width: 100%;
+}
+.seccionMisClases #grid .ClientesSatisfechos .foto8 {
+  grid-area: foto8;
+  width: 100%;
+}
+@media screen and (max-width: 980px) {
+  .seccionMisClases #grid .ClientesSatisfechos .foto8 {
+    display: none;
+  }
+}
+.seccionMisClases #grid .ClientesSatisfechos .foto9 {
+  grid-area: foto9;
+  width: 100%;
+}
+@media screen and (max-width: 980px) {
+  .seccionMisClases #grid .ClientesSatisfechos .foto9 {
+    display: none;
+  }
+}
+
 body {
   font-family: "Rubik", sans-serif;
   color: #b10909;

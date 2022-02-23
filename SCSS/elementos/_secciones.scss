@@ -204,3 +204,307 @@
 
 }   
 
+/*Rutinas*/
+
+.seccionRutinas{
+
+    padding:  10px;
+    margin: 60px 20px 60px 20px;
+    background-color: nth($colores, 8);
+    display: flex;
+    justify-content: space-between;
+
+    .divTextoRutinas{
+
+        width: 80%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+
+        .parrafoRutinas{
+         
+            width: auto;
+            height: auto;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            text-align: left;   
+
+        }
+    }
+
+    .divFotoRutinas{
+
+        .fotoRutinas{
+
+            width: 80%;
+            height: auto;
+            padding: 10px;
+            margin: 10px;
+            object-fit: contain;
+        
+        }    
+
+    }
+
+}
+
+/*Dieta*/
+
+.seccionDieta{
+
+    padding:  10px;
+    margin: 60px 20px 60px 20px;
+    background-color: nth($colores, 8);
+    display: flex;
+    justify-content: space-between;
+
+        .divTextosDieta{
+
+            width: 80%;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .tituloDieta{
+
+            }
+
+           .parrafoDieta{
+
+                width: auto;
+                height: auto;
+                font-size: 20px;
+                padding: 10px;
+                margin: 10px;
+                text-align: left;
+            
+            } 
+        
+        }
+
+        .divFotoComidaSana{
+
+
+            .fotoComidaSana{
+
+                width: 80%;
+                height: auto;
+                padding: 10px;
+                margin: 10px;
+                object-fit: contain;
+
+
+            }    
+
+        }
+
+
+
+}
+
+/*acerca de mi*/
+
+.seccionAcercaDeMi{
+
+    padding: 40px 0px 40px;
+    margin: 20px;
+    background-color: nth($colores, 8);
+    display: flex;
+    justify-content: space-between;
+
+    .divFotoSeba{
+
+        .fotoSeba{
+
+            width: 80%;
+            height: auto;
+            padding: 10px;
+            margin: 10px;
+            object-fit: contain;
+
+
+        }
+
+
+    }
+
+    .textosAcercaDeMi{
+
+        width: 80%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .tituloAcercaDeMi{
+
+            text-align: right;    
+
+        }
+
+        .parrafoAcercaDeMi{
+
+        }
+
+
+    }
+
+
+}
+
+/*mis clases*/
+
+.seccionMisClases{
+
+    padding: 40px 10px 40px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.514);
+    display: flex;
+    justify-content: center;
+
+    #grid{
+
+        display: grid;
+        grid-template-columns: 0,7fr 1,3fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 10px; 
+        grid-template-areas: 
+        "alAireLibre ClientesSatisfechos"
+        "enTuGimnasio ClientesSatisfechos";
+
+        .alAireLibre{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            grid-area: alAireLibre;
+
+
+            .fotoAlAireLibre{
+            
+                width: 60%;
+                align-self: center;
+        
+
+            }
+
+
+
+        }
+
+
+        .enTuGimnasio{
+
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-around;
+            grid-area: enTuGimnasio;
+
+            .fotoEnTuGym{
+
+                width: 60%;
+                align-self: center;
+
+
+            }
+
+
+        }
+
+        .ClientesSatisfechos{
+
+            display: flex;
+            display: grid; 
+            grid-auto-columns: 1fr; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows: 0.8fr 1,2fr 1fr 1fr; 
+            gap: 5px 5px; 
+            grid-template-areas: 
+            "titulo titulo titulo"
+            "foto1 foto2 foto3"
+            "foto4 foto5 foto6"
+            "foto7 foto8 foto9"; 
+            grid-area: ClientesSatisfechos; 
+
+        
+            .foto1 { grid-area: foto1;
+                width: 100%;
+            }
+      
+            .foto2 { grid-area: foto2; 
+                width: 100%;
+                @media screen and (max-width: 980px){
+                    display: none;  
+                }
+            }
+            
+            .foto3 { grid-area: foto3; 
+            width: 100%;
+                @media screen and (max-width: 980px){
+                    display: none;  
+                }    
+
+            }
+            .foto4 { grid-area: foto4; 
+                width: 100%;
+            }
+
+            .foto5 { grid-area: foto5;
+            width: 100%;
+                @media screen and (max-width: 980px){
+                    display: none;  
+                }    
+
+            }
+
+            .foto6 { grid-area: foto6; 
+            width: 100%;
+                @media screen and (max-width: 980px){
+                    display: none;  
+                }    
+
+            }
+
+            .foto7 { grid-area: foto7;
+                width: 100%;
+            }
+
+            .foto8 { grid-area: foto8;
+            width: 100%;
+                @media screen and (max-width: 980px){
+                    display: none;  
+                }
+
+            }
+
+            .foto9 { grid-area: foto9; 
+            width: 100%;
+                @media screen and (max-width: 980px){
+                    display: none;  
+                }
+            }
+
+
+
+        }
+    
+    
+    
+    }
+
+
+}
+
+
+
+
+
+
+
