@@ -52,10 +52,6 @@ h2 {
   }
 }
 
-#carouselExampleFade {
-  width: 40%;
-}
-
 .PrincipalIndex {
   padding: 10px;
   margin: 60px 20px 60px 20px;
@@ -67,6 +63,10 @@ h2 {
   .PrincipalIndex {
     flex-wrap: wrap;
   }
+}
+.PrincipalIndex:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+  color: #cc1414;
 }
 .PrincipalIndex .diVideoPrincipal {
   width: 90%;
@@ -121,7 +121,11 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 500px) {
+.seccionEntrenamiento:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+  color: #cc1414;
+}
+@media screen and (max-width: 700px) {
   .seccionEntrenamiento {
     flex-wrap: wrap;
   }
@@ -154,6 +158,11 @@ h2 {
 }
 
 /*rutinas*/
+.carousel {
+  width: 400px;
+  height: 267px;
+}
+
 /*Disciplinas*/
 .seccionDisciplinas {
   padding: 10px;
@@ -162,13 +171,14 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .seccionDisciplinas {
     flex-wrap: wrap;
   }
 }
-.seccionDisciplinas .divFotoDisciplinas #carouselExampleFade {
-  width: 50%;
+.seccionDisciplinas:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+  color: #cc1414;
 }
 .seccionDisciplinas .divTextosDisciplinas {
   width: 80%;
@@ -197,6 +207,15 @@ h2 {
   background-color: rgba(255, 255, 255, 0.514);
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 700px) {
+  .seccionRutinas {
+    flex-wrap: wrap;
+  }
+}
+.seccionRutinas:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+  color: #cc1414;
 }
 .seccionRutinas .divTextoRutinas {
   width: 80%;
@@ -230,6 +249,15 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 700px) {
+  .seccionDieta {
+    flex-wrap: wrap;
+  }
+}
+.seccionDieta:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+  color: #cc1414;
+}
 .seccionDieta .divTextosDieta {
   width: 80%;
   margin: 10px;
@@ -262,6 +290,15 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 700px) {
+  .seccionAcercaDeMi {
+    flex-wrap: wrap;
+  }
+}
+.seccionAcercaDeMi:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+  color: #cc1414;
+}
 .seccionAcercaDeMi .divFotoSeba .fotoSeba {
   width: 80%;
   height: auto;
@@ -287,6 +324,10 @@ h2 {
   background-color: rgba(255, 255, 255, 0.514);
   display: flex;
   justify-content: center;
+}
+.seccionMisClases:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+  color: #cc1414;
 }
 .seccionMisClases #grid {
   display: grid;
@@ -408,6 +449,44 @@ h2 {
   h2 {
     font-size: 15px;
   }
+}
+
+.barraNav {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 850px) {
+  .barraNav {
+    flex-wrap: wrap;
+  }
+}
+.barraNav nav {
+  font-size: 20px;
+  line-height: 35px;
+  width: 80%;
+  padding: 20px 20px 20px 20px;
+  margin: 10px 10px 10px 10px;
+  background-color: rgba(255, 255, 255, 0.514);
+}
+.barraNav nav ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.barraNav nav ul li {
+  width: 100%;
+  list-style-image: url(../imagenes/weight-red-small25px.png);
+  list-style-position: inside;
+}
+.barraNav nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.barraNav nav ul li a:hover {
+  color: #b10909;
 }
 
 /*# sourceMappingURL=style.css.map */
