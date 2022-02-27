@@ -52,22 +52,23 @@ h2 {
   }
 }
 
-.PrincipalIndex {
+.seccionAcercaDeMi, .seccionDieta, .seccionRutinas, .seccionDisciplinas, .seccionEntrenamiento, .PrincipalIndex {
   padding: 10px;
   margin: 60px 20px 60px 20px;
   background-color: rgba(255, 255, 255, 0.514);
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 500px) {
-  .PrincipalIndex {
-    flex-wrap: wrap;
-  }
-}
-.PrincipalIndex:hover {
+.seccionAcercaDeMi:hover, .seccionDieta:hover, .seccionRutinas:hover, .seccionDisciplinas:hover, .seccionEntrenamiento:hover, .PrincipalIndex:hover {
   background-color: rgba(255, 255, 255, 0.63);
   color: #cc1414;
 }
+@media screen and (max-width: 700px) {
+  .seccionAcercaDeMi, .seccionDieta, .seccionRutinas, .seccionDisciplinas, .seccionEntrenamiento, .PrincipalIndex {
+    flex-wrap: wrap;
+  }
+}
+
 .PrincipalIndex .diVideoPrincipal {
   width: 90%;
   height: 100%;
@@ -114,22 +115,6 @@ h2 {
 }
 
 /*entrenamiento*/
-.seccionEntrenamiento {
-  padding: 10px;
-  margin: 60px 20px 60px 20px;
-  background-color: rgba(255, 255, 255, 0.514);
-  display: flex;
-  justify-content: space-between;
-}
-.seccionEntrenamiento:hover {
-  background-color: rgba(255, 255, 255, 0.63);
-  color: #cc1414;
-}
-@media screen and (max-width: 700px) {
-  .seccionEntrenamiento {
-    flex-wrap: wrap;
-  }
-}
 .seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento {
   width: 80%;
   height: auto;
@@ -164,22 +149,6 @@ h2 {
 }
 
 /*Disciplinas*/
-.seccionDisciplinas {
-  padding: 10px;
-  margin: 60px 20px 60px 20px;
-  background-color: rgba(255, 255, 255, 0.514);
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 700px) {
-  .seccionDisciplinas {
-    flex-wrap: wrap;
-  }
-}
-.seccionDisciplinas:hover {
-  background-color: rgba(255, 255, 255, 0.63);
-  color: #cc1414;
-}
 .seccionDisciplinas .divTextosDisciplinas {
   width: 80%;
   margin: 10px;
@@ -201,22 +170,6 @@ h2 {
 }
 
 /*Rutinas*/
-.seccionRutinas {
-  padding: 10px;
-  margin: 60px 20px 60px 20px;
-  background-color: rgba(255, 255, 255, 0.514);
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 700px) {
-  .seccionRutinas {
-    flex-wrap: wrap;
-  }
-}
-.seccionRutinas:hover {
-  background-color: rgba(255, 255, 255, 0.63);
-  color: #cc1414;
-}
 .seccionRutinas .divTextoRutinas {
   width: 80%;
   margin: 10px;
@@ -242,22 +195,6 @@ h2 {
 }
 
 /*Dieta*/
-.seccionDieta {
-  padding: 10px;
-  margin: 60px 20px 60px 20px;
-  background-color: rgba(255, 255, 255, 0.514);
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 700px) {
-  .seccionDieta {
-    flex-wrap: wrap;
-  }
-}
-.seccionDieta:hover {
-  background-color: rgba(255, 255, 255, 0.63);
-  color: #cc1414;
-}
 .seccionDieta .divTextosDieta {
   width: 80%;
   margin: 10px;
@@ -283,22 +220,6 @@ h2 {
 }
 
 /*acerca de mi*/
-.seccionAcercaDeMi {
-  padding: 40px 0px 40px;
-  margin: 20px;
-  background-color: rgba(255, 255, 255, 0.514);
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 700px) {
-  .seccionAcercaDeMi {
-    flex-wrap: wrap;
-  }
-}
-.seccionAcercaDeMi:hover {
-  background-color: rgba(255, 255, 255, 0.63);
-  color: #cc1414;
-}
 .seccionAcercaDeMi .divFotoSeba .fotoSeba {
   width: 80%;
   height: auto;
@@ -448,6 +369,23 @@ h2 {
 @media screen and (max-width: 850px) {
   h2 {
     font-size: 15px;
+  }
+}
+
+.PrincipalIndex, .seccionEntrenamiento, .seccionDisciplinas, .seccionRutinas, .seccionDieta, .seccionAcercaDeMi {
+  padding: 10px;
+  margin: 60px 20px 60px 20px;
+  background-color: rgba(255, 255, 255, 0.514);
+  display: flex;
+  justify-content: space-between;
+}
+.PrincipalIndex:hover, .seccionEntrenamiento:hover, .seccionDisciplinas:hover, .seccionRutinas:hover, .seccionDieta:hover, .seccionAcercaDeMi:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+  color: #cc1414;
+}
+@media screen and (max-width: 700px) {
+  .PrincipalIndex, .seccionEntrenamiento, .seccionDisciplinas, .seccionRutinas, .seccionDieta, .seccionAcercaDeMi {
+    flex-wrap: wrap;
   }
 }
 

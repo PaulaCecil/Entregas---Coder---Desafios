@@ -21,3 +21,23 @@ h2{
     }
     
 }
+
+%secciones {
+
+    padding:  10px;
+    margin: 60px 20px 60px 20px;
+    background-color: nth($colores, 8);
+    display: flex;
+    justify-content: space-between;
+
+    &:hover {
+        background-color: nth($colores, 9);
+        color: nth($colores, 10);
+    }    
+
+    @media screen and (max-width: 700px) {
+
+        flex-wrap: wrap;
+
+}  
+}
