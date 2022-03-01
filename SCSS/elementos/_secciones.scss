@@ -338,7 +338,14 @@
             margin-right: 20px;
             grid-area: alAireLibre;
             
+            .textoAlAireLibre{
 
+                @media screen and (max-width: 600px){
+
+                    font-size: 15px;
+                }
+                
+            }
 
             .fotoAlAireLibre{
             
@@ -370,6 +377,14 @@
 
             }
 
+            .textoEnTuGym{
+
+                @media screen and (max-width: 600px){
+
+                    font-size: 15px;
+                    }
+            }
+
 
         }
 
@@ -387,6 +402,12 @@
             "foto4 foto5 foto6"
             "foto7 foto8 foto9"; 
             grid-area: ClientesSatisfechos; 
+
+            @media screen and (max-width: 980px){
+               
+                grid-template-columns: 3fr 0fr 0fr;
+                grid-area: ClientesSatisfechos;
+            }
 
         
             .foto1 { grid-area: foto1;

@@ -264,6 +264,11 @@ h2 {
   margin-right: 20px;
   grid-area: alAireLibre;
 }
+@media screen and (max-width: 600px) {
+  .seccionMisClases #grid .alAireLibre .textoAlAireLibre {
+    font-size: 15px;
+  }
+}
 .seccionMisClases #grid .alAireLibre .fotoAlAireLibre {
   width: 60%;
   align-self: center;
@@ -279,6 +284,11 @@ h2 {
   width: 60%;
   align-self: center;
 }
+@media screen and (max-width: 600px) {
+  .seccionMisClases #grid .enTuGimnasio .textoEnTuGym {
+    font-size: 15px;
+  }
+}
 .seccionMisClases #grid .ClientesSatisfechos {
   display: flex;
   display: grid;
@@ -288,6 +298,12 @@ h2 {
   gap: 5px 5px;
   grid-template-areas: "titulo titulo titulo" "foto1 foto2 foto3" "foto4 foto5 foto6" "foto7 foto8 foto9";
   grid-area: ClientesSatisfechos;
+}
+@media screen and (max-width: 980px) {
+  .seccionMisClases #grid .ClientesSatisfechos {
+    grid-template-columns: 3fr 0fr 0fr;
+    grid-area: ClientesSatisfechos;
+  }
 }
 .seccionMisClases #grid .ClientesSatisfechos .foto1 {
   grid-area: foto1;
