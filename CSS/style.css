@@ -52,19 +52,19 @@ h2 {
   }
 }
 
-.seccionAcercaDeMi, .seccionDieta, .seccionRutinas, .seccionDisciplinas, .seccionEntrenamiento, .PrincipalIndex {
+.FormContacto, .seccionAcercaDeMi, .seccionDieta, .seccionRutinas, .seccionDisciplinas, .seccionEntrenamiento, .PrincipalIndex {
   padding: 10px;
   margin: 60px 20px 60px 20px;
   background-color: rgba(255, 255, 255, 0.514);
   display: flex;
   justify-content: space-between;
 }
-.seccionAcercaDeMi:hover, .seccionDieta:hover, .seccionRutinas:hover, .seccionDisciplinas:hover, .seccionEntrenamiento:hover, .PrincipalIndex:hover {
+.FormContacto:hover, .seccionAcercaDeMi:hover, .seccionDieta:hover, .seccionRutinas:hover, .seccionDisciplinas:hover, .seccionEntrenamiento:hover, .PrincipalIndex:hover {
   background-color: rgba(255, 255, 255, 0.63);
   color: #cc1414;
 }
 @media screen and (max-width: 700px) {
-  .seccionAcercaDeMi, .seccionDieta, .seccionRutinas, .seccionDisciplinas, .seccionEntrenamiento, .PrincipalIndex {
+  .FormContacto, .seccionAcercaDeMi, .seccionDieta, .seccionRutinas, .seccionDisciplinas, .seccionEntrenamiento, .PrincipalIndex {
     flex-wrap: wrap;
   }
 }
@@ -390,19 +390,19 @@ h2 {
   }
 }
 
-.PrincipalIndex, .seccionEntrenamiento, .seccionDisciplinas, .seccionRutinas, .seccionDieta, .seccionAcercaDeMi {
+.PrincipalIndex, .seccionEntrenamiento, .seccionDisciplinas, .seccionRutinas, .seccionDieta, .seccionAcercaDeMi, .FormContacto {
   padding: 10px;
   margin: 60px 20px 60px 20px;
   background-color: rgba(255, 255, 255, 0.514);
   display: flex;
   justify-content: space-between;
 }
-.PrincipalIndex:hover, .seccionEntrenamiento:hover, .seccionDisciplinas:hover, .seccionRutinas:hover, .seccionDieta:hover, .seccionAcercaDeMi:hover {
+.PrincipalIndex:hover, .seccionEntrenamiento:hover, .seccionDisciplinas:hover, .seccionRutinas:hover, .seccionDieta:hover, .seccionAcercaDeMi:hover, .FormContacto:hover {
   background-color: rgba(255, 255, 255, 0.63);
   color: #cc1414;
 }
 @media screen and (max-width: 700px) {
-  .PrincipalIndex, .seccionEntrenamiento, .seccionDisciplinas, .seccionRutinas, .seccionDieta, .seccionAcercaDeMi {
+  .PrincipalIndex, .seccionEntrenamiento, .seccionDisciplinas, .seccionRutinas, .seccionDieta, .seccionAcercaDeMi, .FormContacto {
     flex-wrap: wrap;
   }
 }
