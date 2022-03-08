@@ -5,10 +5,7 @@
 
     display: flex;
     justify-content: center;
-    @media screen and (max-width: 850px){
-        
-        flex-wrap: wrap;
-    }
+    
     
     nav{
 
@@ -18,6 +15,8 @@
         padding: 20px 20px 20px 20px;
         margin: 10px 10px 10px 10px; 
         background-color: nth($colores, 8);
+
+        
         
         ul{
 
@@ -26,6 +25,17 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+
+            @media screen and (max-width: 950px){
+        
+                font-size: 15px;
+            }
+
+            @media screen and (max-width: 770px){
+        
+                flex-wrap: wrap;
+                font-size: 15px;
+            }
 
             li{
 
