@@ -19,6 +19,11 @@
 
         .videoEntrenamiento{
             width: 80%;
+
+            @media screen and (max-width: 950px) {
+
+                width: 100%;
+            }
         }
        
     }
@@ -37,8 +42,11 @@
             margin: 10px;
             padding: 10px;
             text-align: right;
-            
-            
+
+            @media screen and (max-width: 950px){
+                text-align: center;
+                     
+            }
         }
         
         .FraseMotivadora{
@@ -52,15 +60,15 @@
             padding: 10px; 
             text-align: right;
 
-            @media screen and (max-width: 850px){
+            @media screen and (max-width: 950px){
 
-                    font-size: 25px;
+                    font-size: 20px;
                     font-weight: 400;
                     line-height: 30px;
                     width:auto;
                     margin: 5px;
                     padding: 5px; 
-                    text-align: right;
+                    text-align: center;
                     
                     }
                          
@@ -83,25 +91,16 @@
 
             .imagenEntrenamiento{
 
-                width: 80%;
-                height: auto;
-                padding: 10px;
-                margin: 10px;
-                object-fit: contain;
-
+                @extend %imagenes;
 
             }
         }
 
         .divTextoEntrenamiento{
 
-            width: 80%;
-            margin: 10px;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            @extend %divtextos;
 
+            
             .tituloEntrenamiento{
 
                 text-align: right;
@@ -109,11 +108,7 @@
             }
 
             .parrafoEntrenamiento{
-                width: auto;
-                height: auto;
-                font-size: 20px;
-                padding: 10px;
-                margin: 10px;
+                @extend %parrafos;
                 text-align: right;
             }
         }
@@ -134,12 +129,7 @@
     
     .divTextosDisciplinas{
 
-        width: 80%;
-        margin: 10px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        @extend %divtextos;
 
             .tituloDisciplinas{
             
@@ -149,13 +139,8 @@
 
             .parrafoDis{
 
-                width: auto;
-                height: auto;
-                font-size: 20px;
-                padding: 10px;
-                margin: 10px;
-                text-align: right;
-
+                @extend %parrafos;
+                text-align: right; 
             }
 
     }
@@ -170,21 +155,12 @@
 
     .divTextoRutinas{
 
-        width: 80%;
-        margin: 10px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        @extend %divtextos;
 
 
         .parrafoRutinas{
          
-            width: auto;
-            height: auto;
-            font-size: 20px;
-            padding: 10px;
-            margin: 10px;
+            @extend %parrafos;
             text-align: left;   
 
         }
@@ -194,12 +170,8 @@
 
         .fotoRutinas{
 
-            width: 80%;
-            height: auto;
-            padding: 10px;
-            margin: 10px;
-            object-fit: contain;
-        
+            @extend %imagenes;
+
         }    
 
     }
@@ -214,12 +186,7 @@
 
         .divTextosDieta{
 
-            width: 80%;
-            margin: 10px;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            @extend %divtextos;
 
             .tituloDieta{
 
@@ -227,12 +194,8 @@
 
            .parrafoDieta{
 
-                width: auto;
-                height: auto;
-                font-size: 20px;
-                padding: 10px;
-                margin: 10px;
-                text-align: left;
+            @extend %parrafos; 
+            text-align: left;
             
             } 
         
@@ -243,11 +206,7 @@
 
             .fotoComidaSana{
 
-                width: 80%;
-                height: auto;
-                padding: 10px;
-                margin: 10px;
-                object-fit: contain;
+                @extend %imagenes;
 
 
             }    
@@ -337,6 +296,12 @@
             justify-content: space-around;
             margin-right: 20px;
             grid-area: alAireLibre;
+
+            .titulosGrid{
+
+                @extend %titulos;
+
+            }
             
             .textoAlAireLibre{
 
@@ -344,6 +309,7 @@
 
                     font-size: 15px;
                 }
+                
                 
             }
 
@@ -368,6 +334,11 @@
             margin-right: 20px;
             grid-area: enTuGimnasio;
             
+            .titulosGrid{
+
+                @extend %titulos;
+
+            }
 
             .fotoEnTuGym{
 
@@ -389,12 +360,11 @@
         }
 
         .ClientesSatisfechos{
-
+        
             display: flex;
             display: grid; 
             grid-auto-columns: 1fr; 
             grid-template-columns: 1fr 1fr 1fr; 
-            grid-template-rows: 0.8fr 1,2fr 1fr 1fr; 
             gap: 5px 5px; 
             grid-template-areas: 
             "titulo titulo titulo"
@@ -407,6 +377,12 @@
                
                 grid-template-columns: 3fr 0fr 0fr;
                 grid-area: ClientesSatisfechos;
+            }
+
+            .titulosGrid{
+
+                @extend %titulos;
+
             }
 
         

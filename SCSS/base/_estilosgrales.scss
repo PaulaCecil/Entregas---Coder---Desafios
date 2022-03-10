@@ -14,14 +14,14 @@ h2{
     color: nth($colores, 1);
     padding-right: 10px;
     font-weight: bolder;
-    
+
    
     @media screen and (max-width: 850px){
-    font-size: 15px;
+    font-size: 20px;
     
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 950px) {
 
         align-self: center;
 
@@ -29,6 +29,23 @@ h2{
 
     
 }
+
+%titulos {
+
+    font-size: 30px;
+    color: nth($colores, 1);
+    padding-right: 10px;
+    font-weight: bolder;
+
+    @media screen and (max-width: 980px){
+
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+}
+
+
 
 %secciones {
 
@@ -43,12 +60,54 @@ h2{
         color: nth($colores, 10);
     }    
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 980px) {
 
         justify-content: center;
 
         flex-wrap: wrap;
 
 }  
+}
+
+%imagenes{
+
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    object-fit: contain;
+
+    @media screen and (max-width: 980px) {
+        
+        width: 100%;
+        
+
+}  
+
+}
+
+%divtextos{
+
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: 980px) {
+        
+        width: 100%;
+       text-align: justify;
+    }
+}
+
+%parrafos{
+
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
 }
 

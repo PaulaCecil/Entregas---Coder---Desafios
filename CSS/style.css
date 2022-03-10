@@ -48,12 +48,25 @@ h2 {
 }
 @media screen and (max-width: 850px) {
   h2 {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 950px) {
   h2 {
     align-self: center;
+  }
+}
+
+.seccionMisClases #grid .ClientesSatisfechos .titulosGrid, .seccionMisClases #grid .enTuGimnasio .titulosGrid, .seccionMisClases #grid .alAireLibre .titulosGrid {
+  font-size: 30px;
+  color: #b10909;
+  padding-right: 10px;
+  font-weight: bolder;
+}
+@media screen and (max-width: 980px) {
+  .seccionMisClases #grid .ClientesSatisfechos .titulosGrid, .seccionMisClases #grid .enTuGimnasio .titulosGrid, .seccionMisClases #grid .alAireLibre .titulosGrid {
+    font-size: 20px;
+    font-weight: bolder;
   }
 }
 
@@ -68,11 +81,47 @@ h2 {
   background-color: rgba(255, 255, 255, 0.63);
   color: #cc1414;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 980px) {
   .FormContacto, .seccionAcercaDeMi, .seccionDieta, .seccionRutinas, .seccionDisciplinas, .seccionEntrenamiento, .PrincipalIndex {
     justify-content: center;
     flex-wrap: wrap;
   }
+}
+
+.seccionDieta .divFotoComidaSana .fotoComidaSana, .seccionRutinas .divFotoRutinas .fotoRutinas, .seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento {
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  object-fit: contain;
+}
+@media screen and (max-width: 980px) {
+  .seccionDieta .divFotoComidaSana .fotoComidaSana, .seccionRutinas .divFotoRutinas .fotoRutinas, .seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento {
+    width: 100%;
+  }
+}
+
+.seccionDieta .divTextosDieta, .seccionRutinas .divTextoRutinas, .seccionDisciplinas .divTextosDisciplinas, .seccionEntrenamiento .divTextoEntrenamiento {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 980px) {
+  .seccionDieta .divTextosDieta, .seccionRutinas .divTextoRutinas, .seccionDisciplinas .divTextosDisciplinas, .seccionEntrenamiento .divTextoEntrenamiento {
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+.seccionDieta .divTextosDieta .parrafoDieta, .seccionRutinas .divTextoRutinas .parrafoRutinas, .seccionDisciplinas .divTextosDisciplinas .parrafoDis, .seccionEntrenamiento .divTextoEntrenamiento .parrafoEntrenamiento {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .PrincipalIndex .diVideoPrincipal {
@@ -83,6 +132,11 @@ h2 {
 }
 .PrincipalIndex .diVideoPrincipal .videoEntrenamiento {
   width: 80%;
+}
+@media screen and (max-width: 950px) {
+  .PrincipalIndex .diVideoPrincipal .videoEntrenamiento {
+    width: 100%;
+  }
 }
 .PrincipalIndex .textosPrincipal {
   width: 60%;
@@ -98,6 +152,11 @@ h2 {
   padding: 10px;
   text-align: right;
 }
+@media screen and (max-width: 950px) {
+  .PrincipalIndex .textosPrincipal .tituloPrincipal {
+    text-align: center;
+  }
+}
 .PrincipalIndex .textosPrincipal .FraseMotivadora {
   font-size: 35px;
   font-style: italic;
@@ -108,43 +167,23 @@ h2 {
   padding: 10px;
   text-align: right;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
   .PrincipalIndex .textosPrincipal .FraseMotivadora {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     width: auto;
     margin: 5px;
     padding: 5px;
-    text-align: right;
+    text-align: center;
   }
 }
 
 /*entrenamiento*/
-.seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento {
-  width: 80%;
-  height: auto;
-  padding: 10px;
-  margin: 10px;
-  object-fit: contain;
-}
-.seccionEntrenamiento .divTextoEntrenamiento {
-  width: 80%;
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
 .seccionEntrenamiento .divTextoEntrenamiento .tituloEntrenamiento {
   text-align: right;
 }
 .seccionEntrenamiento .divTextoEntrenamiento .parrafoEntrenamiento {
-  width: auto;
-  height: auto;
-  font-size: 20px;
-  padding: 10px;
-  margin: 10px;
   text-align: right;
 }
 
@@ -155,76 +194,21 @@ h2 {
 }
 
 /*Disciplinas*/
-.seccionDisciplinas .divTextosDisciplinas {
-  width: 80%;
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
 .seccionDisciplinas .divTextosDisciplinas .tituloDisciplinas {
   text-align: right;
 }
 .seccionDisciplinas .divTextosDisciplinas .parrafoDis {
-  width: auto;
-  height: auto;
-  font-size: 20px;
-  padding: 10px;
-  margin: 10px;
   text-align: right;
 }
 
 /*Rutinas*/
-.seccionRutinas .divTextoRutinas {
-  width: 80%;
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
 .seccionRutinas .divTextoRutinas .parrafoRutinas {
-  width: auto;
-  height: auto;
-  font-size: 20px;
-  padding: 10px;
-  margin: 10px;
   text-align: left;
 }
-.seccionRutinas .divFotoRutinas .fotoRutinas {
-  width: 80%;
-  height: auto;
-  padding: 10px;
-  margin: 10px;
-  object-fit: contain;
-}
-
 /*Dieta*/
-.seccionDieta .divTextosDieta {
-  width: 80%;
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
 .seccionDieta .divTextosDieta .parrafoDieta {
-  width: auto;
-  height: auto;
-  font-size: 20px;
-  padding: 10px;
-  margin: 10px;
   text-align: left;
 }
-.seccionDieta .divFotoComidaSana .fotoComidaSana {
-  width: 80%;
-  height: auto;
-  padding: 10px;
-  margin: 10px;
-  object-fit: contain;
-}
-
 /*acerca de mi*/
 .seccionAcercaDeMi .divFotoSeba .fotoSeba {
   width: 80%;
@@ -300,7 +284,6 @@ h2 {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.8fr 1, 2fr 1fr 1fr;
   gap: 5px 5px;
   grid-template-areas: "titulo titulo titulo" "foto1 foto2 foto3" "foto4 foto5 foto6" "foto7 foto8 foto9";
   grid-area: ClientesSatisfechos;
@@ -392,12 +375,25 @@ h2 {
 }
 @media screen and (max-width: 850px) {
   h2 {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 950px) {
   h2 {
     align-self: center;
+  }
+}
+
+.seccionMisClases #grid .alAireLibre .titulosGrid, .seccionMisClases #grid .enTuGimnasio .titulosGrid, .seccionMisClases #grid .ClientesSatisfechos .titulosGrid {
+  font-size: 30px;
+  color: #b10909;
+  padding-right: 10px;
+  font-weight: bolder;
+}
+@media screen and (max-width: 980px) {
+  .seccionMisClases #grid .alAireLibre .titulosGrid, .seccionMisClases #grid .enTuGimnasio .titulosGrid, .seccionMisClases #grid .ClientesSatisfechos .titulosGrid {
+    font-size: 20px;
+    font-weight: bolder;
   }
 }
 
@@ -412,11 +408,47 @@ h2 {
   background-color: rgba(255, 255, 255, 0.63);
   color: #cc1414;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 980px) {
   .PrincipalIndex, .seccionEntrenamiento, .seccionDisciplinas, .seccionRutinas, .seccionDieta, .seccionAcercaDeMi, .FormContacto {
     justify-content: center;
     flex-wrap: wrap;
   }
+}
+
+.seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento, .seccionRutinas .divFotoRutinas .fotoRutinas, .seccionDieta .divFotoComidaSana .fotoComidaSana {
+  width: 80%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  object-fit: contain;
+}
+@media screen and (max-width: 980px) {
+  .seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento, .seccionRutinas .divFotoRutinas .fotoRutinas, .seccionDieta .divFotoComidaSana .fotoComidaSana {
+    width: 100%;
+  }
+}
+
+.seccionEntrenamiento .divTextoEntrenamiento, .seccionDisciplinas .divTextosDisciplinas, .seccionRutinas .divTextoRutinas, .seccionDieta .divTextosDieta {
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 980px) {
+  .seccionEntrenamiento .divTextoEntrenamiento, .seccionDisciplinas .divTextosDisciplinas, .seccionRutinas .divTextoRutinas, .seccionDieta .divTextosDieta {
+    width: 100%;
+    text-align: justify;
+  }
+}
+
+.seccionEntrenamiento .divTextoEntrenamiento .parrafoEntrenamiento, .seccionDisciplinas .divTextosDisciplinas .parrafoDis, .seccionRutinas .divTextoRutinas .parrafoRutinas, .seccionDieta .divTextosDieta .parrafoDieta {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .barraNav {
