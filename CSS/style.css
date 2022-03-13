@@ -458,14 +458,31 @@ h2 {
 .barraNav {
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+}
+@media screen and (max-width: 770px) {
+  .barraNav {
+    justify-content: left;
+    z-index: 100%;
+  }
 }
 .barraNav nav {
   font-size: 20px;
   line-height: 35px;
-  width: 80%;
+  width: 100%;
   padding: 20px 20px 20px 20px;
   margin: 10px 10px 10px 10px;
   background-color: rgba(255, 255, 255, 0.514);
+}
+@media screen and (max-width: 770px) {
+  .barraNav nav {
+    padding: 5px;
+    margin: 5px;
+    line-height: 15px;
+    width: 25%;
+  }
 }
 .barraNav nav ul {
   width: 100%;
@@ -482,13 +499,21 @@ h2 {
 @media screen and (max-width: 770px) {
   .barraNav nav ul {
     flex-wrap: wrap;
-    font-size: 15px;
+    font-size: 10px;
+    margin: 10px;
+    padding: 5px;
   }
 }
 .barraNav nav ul li {
   width: 100%;
   list-style-image: url(../imagenes/weight-red-small25px.png);
   list-style-position: inside;
+}
+@media screen and (max-width: 770px) {
+  .barraNav nav ul li {
+    list-style-image: none;
+    width: 80%;
+  }
 }
 .barraNav nav ul li a {
   text-decoration: none;
@@ -497,6 +522,14 @@ h2 {
 }
 .barraNav nav ul li a:hover {
   color: #b10909;
+}
+@media screen and (max-width: 770px) {
+  .barraNav nav ul li a {
+    color: #0c0cc2;
+  }
+  .barraNav nav ul li a:hover {
+    color: #b10909;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

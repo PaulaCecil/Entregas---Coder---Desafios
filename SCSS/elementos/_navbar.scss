@@ -5,16 +5,33 @@
 
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    @media screen and (max-width: 770px){
+
+        justify-content: left;
+        z-index: 100%;
+    }
+   
     
     
     nav{
 
         font-size: 20px;
         line-height: 35px;
-        width: 80%;
+        width: 100%;
         padding: 20px 20px 20px 20px;
         margin: 10px 10px 10px 10px; 
         background-color: nth($colores, 8);
+
+        @media screen and (max-width: 770px){
+
+            padding: 5px;
+            margin: 5px;
+            line-height: 15px;
+            width: 25%;
+        }
 
         
         
@@ -34,7 +51,10 @@
             @media screen and (max-width: 770px){
         
                 flex-wrap: wrap;
-                font-size: 15px;
+                font-size: 10px;
+                margin: 10px;
+                padding: 5px;
+                
             }
 
             li{
@@ -42,6 +62,13 @@
                 width: 100%;
                 list-style-image: url(../imagenes/weight-red-small25px.png);
                 list-style-position: inside;
+
+            @media screen and (max-width: 770px){
+
+                list-style-image: none;
+                width: 80%;
+            }
+
                 
 
                 
@@ -53,6 +80,17 @@
 
                         color: nth($colores, 1);
                     }
+
+                    @media screen and (max-width: 770px){
+                    
+                        color: nth($colores, 5);
+                        &:hover{
+
+                            color: nth($colores, 1);
+                        }
+
+
+                    }    
                 }
             }
         }
