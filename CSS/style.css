@@ -481,6 +481,7 @@ h2 {
     margin: 5px;
     line-height: 15px;
     width: 100%;
+    z-index: 100%;
   }
 }
 .barraNav nav ul {
@@ -493,6 +494,7 @@ h2 {
 @media screen and (max-width: 950px) {
   .barraNav nav ul {
     font-size: 15px;
+    z-index: 100%;
   }
 }
 @media screen and (max-width: 770px) {
@@ -505,6 +507,7 @@ h2 {
 @media screen and (max-width: 550px) {
   .barraNav nav ul {
     font-size: 10px;
+    z-index: 100%;
   }
 }
 .barraNav nav ul li {
@@ -528,7 +531,7 @@ h2 {
 }
 @media screen and (max-width: 770px) {
   .barraNav nav ul li a {
-    color: #0c0cc2;
+    color: black;
   }
   .barraNav nav ul li a:hover {
     color: #b10909;
