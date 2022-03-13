@@ -361,8 +361,25 @@ h2 {
   }
 }
 
+/*CONTACTO*/
+#contacto {
+  margin: 30px;
+  margin: 30px;
+}
+
+/*Formulario de contacto*/
 .disclaimer {
   display: none;
+}
+
+.px-2 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.mt-0 {
+  margin-top: 30px !important;
+  margin-bottom: 25px !important;
 }
 
 body {
