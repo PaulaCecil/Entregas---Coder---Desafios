@@ -6,11 +6,10 @@
     display: flex;
     justify-content: center;
     position: sticky;
-    top: 0px;
+    top: 5px;
     width: 100%;
     @media screen and (max-width: 770px){
 
-        /*justify-content: left;*/
         z-index: 100%;
     }
    
@@ -23,7 +22,7 @@
         width: 100%;
         padding: 20px 20px 20px 20px;
         margin: 10px 10px 10px 10px; 
-        background-color: nth($colores, 8);
+        background-color: nth($colores, 11);
 
         @media screen and (max-width: 770px){
 
@@ -31,6 +30,8 @@
             margin: 5px;
             line-height: 15px;
             width: 100%;
+
+            
         }
 
         
@@ -41,7 +42,7 @@
             list-style-type: none;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-evenly;
 
             @media screen and (max-width: 950px){
         
@@ -50,7 +51,6 @@
 
             @media screen and (max-width: 770px){
         
-                /*flex-wrap: wrap;*/
                 font-size: 15px;
                 margin: 10px;
                 padding: 5px;
