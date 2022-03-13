@@ -10,7 +10,7 @@
     width: 100%;
     @media screen and (max-width: 770px){
 
-        justify-content: left;
+        /*justify-content: left;*/
         z-index: 100%;
     }
    
@@ -30,7 +30,7 @@
             padding: 5px;
             margin: 5px;
             line-height: 15px;
-            width: 35%;
+            width: 100%;
         }
 
         
@@ -50,11 +50,17 @@
 
             @media screen and (max-width: 770px){
         
-                flex-wrap: wrap;
+                /*flex-wrap: wrap;*/
                 font-size: 15px;
                 margin: 10px;
                 padding: 5px;
                 
+            }
+
+            @media screen and (max-width: 550px){
+
+                font-size: 10px;
+
             }
 
             li{
