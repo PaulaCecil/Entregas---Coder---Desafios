@@ -89,7 +89,7 @@ h2 {
   }
 }
 
-.seccionDieta .divFotoComidaSana .fotoComidaSana, .seccionRutinas .divFotoRutinas .fotoRutinas, .seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento {
+.seccionAcercaDeMi .divFotoSeba .fotoSeba, .seccionDieta .divFotoComidaSana .fotoComidaSana, .seccionRutinas .divFotoRutinas .fotoRutinas, .seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento {
   width: auto;
   height: auto;
 }
@@ -204,13 +204,6 @@ h2 {
   text-align: left;
 }
 /*acerca de mi*/
-.seccionAcercaDeMi .divFotoSeba .fotoSeba {
-  width: 80%;
-  height: auto;
-  padding: 10px;
-  margin: 10px;
-  object-fit: contain;
-}
 .seccionAcercaDeMi .textosAcercaDeMi .tituloAcercaDeMi {
   text-align: right;
 }
@@ -432,7 +425,7 @@ h2 {
   }
 }
 
-.seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento, .seccionRutinas .divFotoRutinas .fotoRutinas, .seccionDieta .divFotoComidaSana .fotoComidaSana {
+.seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento, .seccionRutinas .divFotoRutinas .fotoRutinas, .seccionDieta .divFotoComidaSana .fotoComidaSana, .seccionAcercaDeMi .divFotoSeba .fotoSeba {
   width: auto;
   height: auto;
 }
