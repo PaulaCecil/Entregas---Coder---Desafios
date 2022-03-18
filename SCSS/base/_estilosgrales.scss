@@ -12,7 +12,8 @@ body {
 h2{
     font-size: 30px;
     color: nth($colores, 1);
-    padding-right: 10px;
+    padding: 10px;
+    margin: 10px;
     font-weight: bolder;
 
    
@@ -54,6 +55,7 @@ h2{
     background-color: nth($colores, 8);
     display: flex;
     justify-content: space-between;
+    
 
     &:hover {
         background-color: nth($colores, 9);
@@ -71,34 +73,33 @@ h2{
 
 %imagenes{
 
-    width: 80%;
+    width: auto;
     height: auto;
-    padding: 10px;
-    margin: 10px;
-    object-fit: contain;
+       
 
-    @media screen and (max-width: 980px) {
+//     @media screen and (max-width: 980px) {
         
-        width: 100%;
+//         width: 100%;
         
 
-}  
+// }  
 
 }
 
 %divtextos{
 
-    width: 80%;
+    width: 50%;
     margin: 10px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    text-align: justify;
 
     @media screen and (max-width: 980px) {
         
         width: 100%;
-       text-align: justify;
+       
     }
 }
 
@@ -109,5 +110,7 @@ h2{
     font-size: 20px;
     padding: 10px;
     margin: 10px;
+    text-align: justify;
+
 }
 
