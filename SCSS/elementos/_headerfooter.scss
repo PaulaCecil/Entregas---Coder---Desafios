@@ -50,4 +50,66 @@ header{
 /*footer*/
 
 
+.redesS{
 
+    @media screen and (max-width: 780px){
+
+       display: none;
+    }
+
+}
+
+.divInicio{
+
+    position: relative;
+
+
+
+    .inicioTexto{
+
+        position: absolute;
+        top: 39%; 
+        right: 23%; 
+        width: 100%; 
+        font-size: medium;
+        font-weight: bolder;
+        color: nth($colores, 10);
+
+        @media screen and (max-width: 980px){
+            
+            top: 39%; 
+            right: 15%;
+
+        }
+
+        @media screen and (max-width: 780px){
+
+            position: relative;
+        }
+
+        @media screen and (max-width: 600px){
+
+            margin-left: 20px !important;
+
+        }
+
+
+        
+
+    }
+
+    
+    .pesaInicio{
+
+
+
+        
+        @media screen and (max-width: 780px){
+
+       
+           display: none;
+        
+        }
+    }
+
+}
