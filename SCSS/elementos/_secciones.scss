@@ -118,16 +118,28 @@
 
 /*rutinas*/
 
-.carousel { width:400px; 
-            height:267px;
-            z-index: -1000;
-            
-        }
+
 
 /*Disciplinas*/
 
+.divFotosCarou{
+
+    align-items: center;
+
+    .carousel { width:400px;
+        margin:15px 10px 10px 10px;
+        padding:15px 10px 10px 10px; 
+        height:267px;
+        z-index: 80;
+        
+    }
+
+}
+
+
 .seccionDisciplinas{
     @extend %secciones;
+    
 
     
     .divTextosDisciplinas{

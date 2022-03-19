@@ -184,13 +184,18 @@ h2 {
 }
 
 /*rutinas*/
-.carousel {
+/*Disciplinas*/
+.divFotosCarou {
+  align-items: center;
+}
+.divFotosCarou .carousel {
   width: 400px;
+  margin: 15px 10px 10px 10px;
+  padding: 15px 10px 10px 10px;
   height: 267px;
-  z-index: -1000;
+  z-index: 80;
 }
 
-/*Disciplinas*/
 .seccionDisciplinas .divTextosDisciplinas .tituloDisciplinas {
   text-align: right;
 }
@@ -465,11 +470,7 @@ h2 {
   position: sticky;
   top: 5px;
   width: 100%;
-}
-@media screen and (max-width: 770px) {
-  .barraNav {
-    z-index: 100%;
-  }
+  z-index: 100;
 }
 .barraNav nav {
   font-size: 20px;
