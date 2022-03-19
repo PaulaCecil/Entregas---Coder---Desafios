@@ -59,57 +59,57 @@ header{
 
 }
 
-.divInicio{
+// .divInicio{
 
-    position: relative;
+//     position: relative;
 
 
 
-    .inicioTexto{
+//     .inicioTexto{
 
-        position: absolute;
-        top: 39%; 
-        right: 23%; 
-        width: 100%; 
-        font-size: medium;
-        font-weight: bolder;
-        color: nth($colores, 10);
+//         position: absolute;
+//         top: 39%; 
+//         left: 5%; 
+//         width: 100%; 
+//         font-size: medium;
+//         font-weight: bolder;
+//         color: nth($colores, 10);
 
-        @media screen and (max-width: 980px){
+//         @media screen and (max-width: 980px){
             
-            top: 39%; 
-            right: 15%;
+//             top: 39%; 
+//             right: 15%;
 
-        }
+//         }
 
-        @media screen and (max-width: 780px){
+//         @media screen and (max-width: 780px){
 
-            position: relative;
-        }
+//             position: relative;
+//         }
 
-        @media screen and (max-width: 600px){
+//         @media screen and (max-width: 600px){
 
-            margin-left: 20px !important;
+//             margin-left: 20px !important;
 
-        }
+//         }
 
 
         
 
-    }
+//     }
 
     
-    .pesaInicio{
+//     .pesaInicio{
 
 
 
         
-        @media screen and (max-width: 780px){
+//         @media screen and (max-width: 780px){
 
        
-           display: none;
+//            display: none;
         
-        }
-    }
+//         }
+//     }
 
-}
+// }
