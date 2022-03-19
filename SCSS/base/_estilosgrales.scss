@@ -62,7 +62,7 @@ h2{
         color: nth($colores, 10);
     }    
 
-    @media screen and (max-width: 980px) {
+    @media screen and (max-width: 950px) {
 
         justify-content: center;
 
@@ -72,13 +72,14 @@ h2{
 }
 
 %imagenes{
-
-    width: auto;
-    height: auto;
-
-    // @media screen and (max-width: 500px) {
    
-    // }
+
+   @media screen and (max-width: 950px) {
+
+    width: 100%;
+   height: auto;
+   
+    }
 }
 
 %divtextos{

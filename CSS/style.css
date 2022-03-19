@@ -82,16 +82,18 @@ h2 {
   background-color: rgba(255, 255, 255, 0.63);
   color: #cc1414;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 950px) {
   .seccionAcercaDeMi, .seccionDieta, .seccionRutinas, .seccionDisciplinas, .seccionEntrenamiento, .PrincipalIndex {
     justify-content: center;
     flex-wrap: wrap;
   }
 }
 
-.seccionAcercaDeMi .divFotoSeba .fotoSeba, .seccionDieta .divFotoComidaSana .fotoComidaSana, .seccionRutinas .divFotoRutinas .fotoRutinas, .seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento {
-  width: auto;
-  height: auto;
+@media screen and (max-width: 950px) {
+  .seccionAcercaDeMi .divFotoSeba .fotoSeba, .seccionDieta .divFotoComidaSana .fotoComidaSana, .seccionRutinas .divFotoRutinas .fotoRutinas, .seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .seccionAcercaDeMi .textosAcercaDeMi, .seccionDieta .divTextosDieta, .seccionRutinas .divTextoRutinas, .seccionDisciplinas .divTextosDisciplinas, .seccionEntrenamiento .divTextoEntrenamiento {
@@ -418,16 +420,18 @@ h2 {
   background-color: rgba(255, 255, 255, 0.63);
   color: #cc1414;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 950px) {
   .PrincipalIndex, .seccionEntrenamiento, .seccionDisciplinas, .seccionRutinas, .seccionDieta, .seccionAcercaDeMi {
     justify-content: center;
     flex-wrap: wrap;
   }
 }
 
-.seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento, .seccionRutinas .divFotoRutinas .fotoRutinas, .seccionDieta .divFotoComidaSana .fotoComidaSana, .seccionAcercaDeMi .divFotoSeba .fotoSeba {
-  width: auto;
-  height: auto;
+@media screen and (max-width: 950px) {
+  .seccionEntrenamiento .divFotoEntrenamiento .imagenEntrenamiento, .seccionRutinas .divFotoRutinas .fotoRutinas, .seccionDieta .divFotoComidaSana .fotoComidaSana, .seccionAcercaDeMi .divFotoSeba .fotoSeba {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .seccionEntrenamiento .divTextoEntrenamiento, .seccionDisciplinas .divTextosDisciplinas, .seccionRutinas .divTextoRutinas, .seccionDieta .divTextosDieta, .seccionAcercaDeMi .textosAcercaDeMi {
