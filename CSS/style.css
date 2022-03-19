@@ -187,6 +187,7 @@ h2 {
 .carousel {
   width: 400px;
   height: 267px;
+  z-index: -1000;
 }
 
 /*Disciplinas*/
