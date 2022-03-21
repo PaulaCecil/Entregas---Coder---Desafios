@@ -183,6 +183,13 @@
             padding:15px 10px 10px 10px; 
             height:267px;
             z-index: 80;
+
+            @media screen and (max-width: 450px) {
+
+                width:320px;  
+                height:214px;
+
+            }
             
         }
     

@@ -198,6 +198,12 @@ body {
   height: 267px;
   z-index: 80;
 }
+@media screen and (max-width: 450px) {
+  .seccionDisciplinas .divFotosCarou .carousel {
+    width: 320px;
+    height: 214px;
+  }
+}
 .seccionDisciplinas .divTextosDisciplinas .tituloDisciplinas {
   text-align: right;
 }
