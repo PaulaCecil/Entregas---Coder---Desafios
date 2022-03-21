@@ -20,7 +20,7 @@
         .videoEntrenamiento{
             width: 80%;
 
-            @media screen and (max-width: 950px) {
+            @media screen and (max-width: 950px) { 
 
                 width: 100%;
             }
@@ -87,9 +87,15 @@
 
     @extend %secciones;
 
+    
+
         .divFotoEntrenamiento{
 
-                            
+            @media screen and (max-width: 950px) {
+
+                margin-top: 30px;
+        
+            }               
 
             .imagenEntrenamiento{
 
@@ -105,6 +111,7 @@
             
             .tituloEntrenamiento{
 
+                @extend %titulos;
                 text-align: right;
 
             }
@@ -116,29 +123,70 @@
         }
 }
 
-/*rutinas*/
+/*Rutinas*/
+
+.seccionRutinas{
+
+    @extend %secciones;
+
+    .divTextoRutinas{
+
+        @extend %divtextos;
+
+        .tituloRutinas{
+
+            @extend %titulos;
+            
+        }
 
 
+        .parrafoRutinas{
+         
+            @extend %parrafos;
+            text-align: left;   
 
-/*Disciplinas*/
+        }
+    }
 
-.divFotosCarou{
+    .divFotoRutinas{
 
-    align-items: center;
+        @media screen and (max-width: 950px) {
 
-    .carousel { width:400px;
-        margin:15px 10px 10px 10px;
-        padding:15px 10px 10px 10px; 
-        height:267px;
-        z-index: 80;
-        
+            margin-bottom: 30px;
+    
+        }   
+
+       
+        .fotoRutinas{
+
+            @extend %imagenes;
+
+        }    
+
     }
 
 }
 
 
+/*Disciplinas*/
+
 .seccionDisciplinas{
+
     @extend %secciones;
+
+    .divFotosCarou{
+
+        align-items: center;
+    
+        .carousel { width:400px;
+            margin:15px 10px 10px 10px;
+            padding:15px 10px 10px 10px; 
+            height:267px;
+            z-index: 80;
+            
+        }
+    
+    }
     
 
     
@@ -149,6 +197,7 @@
             .tituloDisciplinas{
             
                 text-align: right;    
+                @extend %titulos;
 
             }
 
@@ -162,37 +211,6 @@
 
 }   
 
-/*Rutinas*/
-
-.seccionRutinas{
-
-    @extend %secciones;
-
-    .divTextoRutinas{
-
-        @extend %divtextos;
-
-
-        .parrafoRutinas{
-         
-            @extend %parrafos;
-            text-align: left;   
-
-        }
-    }
-
-    .divFotoRutinas{
-
-       
-        .fotoRutinas{
-
-            @extend %imagenes;
-
-        }    
-
-    }
-
-}
 
 /*Dieta*/
 
@@ -203,6 +221,11 @@
         .divTextosDieta{
 
             @extend %divtextos;
+
+            .tituloDieta{
+
+                @extend %titulos;
+            }
 
             
 
@@ -216,6 +239,13 @@
         }
 
         .divFotoComidaSana{
+
+            @media screen and (max-width: 950px) {
+
+                margin-bottom: 30px;
+        
+            }   
+    
 
 
             .fotoComidaSana{
@@ -238,6 +268,13 @@
     @extend %secciones;
 
     .divFotoSeba{
+
+        @media screen and (max-width: 950px) {
+
+            margin-top: 30px;
+    
+        }   
+
     
 
         .fotoSeba{
@@ -256,6 +293,7 @@
         
         .tituloAcercaDeMi{
 
+            @extend %titulos;
             text-align: right;    
 
         }
@@ -662,6 +700,11 @@
         margin: 15px;
         padding: 15px;
 
+    }
+
+    .tituloContacto{
+
+        @extend %titulos;
     }
 
 }

@@ -47,50 +47,33 @@ body {
   background-color: #639ae2;
 }
 
-h2 {
-  font-size: 30px;
-  color: #b10909;
-  padding: 10px;
-  margin: 10px;
-  font-weight: bolder;
-}
-@media screen and (max-width: 850px) {
-  h2 {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 950px) {
-  h2 {
-    align-self: center;
-  }
-}
-
-.seccionMisClases #grid .ClientesSatisfechos .titulosGrid, .seccionMisClases #grid .enTuGimnasio .titulosGrid, .seccionMisClases #grid .alAireLibre .titulosGrid {
+#contacto .tituloContacto, .seccionMisClases #grid .ClientesSatisfechos .titulosGrid, .seccionMisClases #grid .enTuGimnasio .titulosGrid, .seccionMisClases #grid .alAireLibre .titulosGrid, .seccionAcercaDeMi .textosAcercaDeMi .tituloAcercaDeMi, .seccionDieta .divTextosDieta .tituloDieta, .seccionDisciplinas .divTextosDisciplinas .tituloDisciplinas, .seccionRutinas .divTextoRutinas .tituloRutinas, .seccionEntrenamiento .divTextoEntrenamiento .tituloEntrenamiento {
   font-size: 30px;
   color: #b10909;
   padding-right: 10px;
   font-weight: bolder;
 }
 @media screen and (max-width: 980px) {
-  .seccionMisClases #grid .ClientesSatisfechos .titulosGrid, .seccionMisClases #grid .enTuGimnasio .titulosGrid, .seccionMisClases #grid .alAireLibre .titulosGrid {
+  #contacto .tituloContacto, .seccionMisClases #grid .ClientesSatisfechos .titulosGrid, .seccionMisClases #grid .enTuGimnasio .titulosGrid, .seccionMisClases #grid .alAireLibre .titulosGrid, .seccionAcercaDeMi .textosAcercaDeMi .tituloAcercaDeMi, .seccionDieta .divTextosDieta .tituloDieta, .seccionDisciplinas .divTextosDisciplinas .tituloDisciplinas, .seccionRutinas .divTextoRutinas .tituloRutinas, .seccionEntrenamiento .divTextoEntrenamiento .tituloEntrenamiento {
     font-size: 20px;
     font-weight: bolder;
+    align-self: center;
   }
 }
 
-.seccionAcercaDeMi, .seccionDieta, .seccionRutinas, .seccionDisciplinas, .seccionEntrenamiento, .PrincipalIndex {
+.seccionAcercaDeMi, .seccionDieta, .seccionDisciplinas, .seccionRutinas, .seccionEntrenamiento, .PrincipalIndex {
   padding: 10px;
   margin: 60px 20px 60px 20px;
   background-color: rgba(255, 255, 255, 0.514);
   display: flex;
   justify-content: space-between;
 }
-.seccionAcercaDeMi:hover, .seccionDieta:hover, .seccionRutinas:hover, .seccionDisciplinas:hover, .seccionEntrenamiento:hover, .PrincipalIndex:hover {
+.seccionAcercaDeMi:hover, .seccionDieta:hover, .seccionDisciplinas:hover, .seccionRutinas:hover, .seccionEntrenamiento:hover, .PrincipalIndex:hover {
   background-color: rgba(255, 255, 255, 0.63);
   color: #cc1414;
 }
 @media screen and (max-width: 950px) {
-  .seccionAcercaDeMi, .seccionDieta, .seccionRutinas, .seccionDisciplinas, .seccionEntrenamiento, .PrincipalIndex {
+  .seccionAcercaDeMi, .seccionDieta, .seccionDisciplinas, .seccionRutinas, .seccionEntrenamiento, .PrincipalIndex {
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -103,7 +86,7 @@ h2 {
   }
 }
 
-.seccionAcercaDeMi .textosAcercaDeMi, .seccionDieta .divTextosDieta, .seccionRutinas .divTextoRutinas, .seccionDisciplinas .divTextosDisciplinas, .seccionEntrenamiento .divTextoEntrenamiento {
+.seccionAcercaDeMi .textosAcercaDeMi, .seccionDieta .divTextosDieta, .seccionDisciplinas .divTextosDisciplinas, .seccionRutinas .divTextoRutinas, .seccionEntrenamiento .divTextoEntrenamiento {
   width: 50%;
   margin: 10px;
   padding: 10px;
@@ -113,12 +96,12 @@ h2 {
   text-align: justify;
 }
 @media screen and (max-width: 980px) {
-  .seccionAcercaDeMi .textosAcercaDeMi, .seccionDieta .divTextosDieta, .seccionRutinas .divTextoRutinas, .seccionDisciplinas .divTextosDisciplinas, .seccionEntrenamiento .divTextoEntrenamiento {
+  .seccionAcercaDeMi .textosAcercaDeMi, .seccionDieta .divTextosDieta, .seccionDisciplinas .divTextosDisciplinas, .seccionRutinas .divTextoRutinas, .seccionEntrenamiento .divTextoEntrenamiento {
     width: 100%;
   }
 }
 
-.seccionAcercaDeMi .textosAcercaDeMi .parrafoAcercaDeMi, .seccionDieta .divTextosDieta .parrafoDieta, .seccionRutinas .divTextoRutinas .parrafoRutinas, .seccionDisciplinas .divTextosDisciplinas .parrafoDis, .seccionEntrenamiento .divTextoEntrenamiento .parrafoEntrenamiento {
+.seccionAcercaDeMi .textosAcercaDeMi .parrafoAcercaDeMi, .seccionDieta .divTextosDieta .parrafoDieta, .seccionDisciplinas .divTextosDisciplinas .parrafoDis, .seccionRutinas .divTextoRutinas .parrafoRutinas, .seccionEntrenamiento .divTextoEntrenamiento .parrafoEntrenamiento {
   width: auto;
   height: auto;
   font-size: 20px;
@@ -183,6 +166,11 @@ h2 {
 }
 
 /*entrenamiento*/
+@media screen and (max-width: 950px) {
+  .seccionEntrenamiento .divFotoEntrenamiento {
+    margin-top: 30px;
+  }
+}
 .seccionEntrenamiento .divTextoEntrenamiento .tituloEntrenamiento {
   text-align: right;
 }
@@ -190,19 +178,26 @@ h2 {
   text-align: right;
 }
 
-/*rutinas*/
+/*Rutinas*/
+.seccionRutinas .divTextoRutinas .parrafoRutinas {
+  text-align: left;
+}
+@media screen and (max-width: 950px) {
+  .seccionRutinas .divFotoRutinas {
+    margin-bottom: 30px;
+  }
+}
 /*Disciplinas*/
-.divFotosCarou {
+.seccionDisciplinas .divFotosCarou {
   align-items: center;
 }
-.divFotosCarou .carousel {
+.seccionDisciplinas .divFotosCarou .carousel {
   width: 400px;
   margin: 15px 10px 10px 10px;
   padding: 15px 10px 10px 10px;
   height: 267px;
   z-index: 80;
 }
-
 .seccionDisciplinas .divTextosDisciplinas .tituloDisciplinas {
   text-align: right;
 }
@@ -210,15 +205,21 @@ h2 {
   text-align: right;
 }
 
-/*Rutinas*/
-.seccionRutinas .divTextoRutinas .parrafoRutinas {
-  text-align: left;
-}
 /*Dieta*/
 .seccionDieta .divTextosDieta .parrafoDieta {
   text-align: left;
 }
+@media screen and (max-width: 950px) {
+  .seccionDieta .divFotoComidaSana {
+    margin-bottom: 30px;
+  }
+}
 /*acerca de mi*/
+@media screen and (max-width: 950px) {
+  .seccionAcercaDeMi .divFotoSeba {
+    margin-top: 30px;
+  }
+}
 .seccionAcercaDeMi .textosAcercaDeMi .tituloAcercaDeMi {
   text-align: right;
 }
@@ -513,7 +514,6 @@ h2 {
     padding: 15px;
   }
 }
-
 /*Formulario de contacto*/
 .FormContacto {
   justify-content: center;
@@ -556,50 +556,33 @@ body {
   background-color: #639ae2;
 }
 
-h2 {
-  font-size: 30px;
-  color: #b10909;
-  padding: 10px;
-  margin: 10px;
-  font-weight: bolder;
-}
-@media screen and (max-width: 850px) {
-  h2 {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 950px) {
-  h2 {
-    align-self: center;
-  }
-}
-
-.seccionMisClases #grid .alAireLibre .titulosGrid, .seccionMisClases #grid .enTuGimnasio .titulosGrid, .seccionMisClases #grid .ClientesSatisfechos .titulosGrid {
+.seccionEntrenamiento .divTextoEntrenamiento .tituloEntrenamiento, .seccionRutinas .divTextoRutinas .tituloRutinas, .seccionDisciplinas .divTextosDisciplinas .tituloDisciplinas, .seccionDieta .divTextosDieta .tituloDieta, .seccionAcercaDeMi .textosAcercaDeMi .tituloAcercaDeMi, .seccionMisClases #grid .alAireLibre .titulosGrid, .seccionMisClases #grid .enTuGimnasio .titulosGrid, .seccionMisClases #grid .ClientesSatisfechos .titulosGrid, #contacto .tituloContacto {
   font-size: 30px;
   color: #b10909;
   padding-right: 10px;
   font-weight: bolder;
 }
 @media screen and (max-width: 980px) {
-  .seccionMisClases #grid .alAireLibre .titulosGrid, .seccionMisClases #grid .enTuGimnasio .titulosGrid, .seccionMisClases #grid .ClientesSatisfechos .titulosGrid {
+  .seccionEntrenamiento .divTextoEntrenamiento .tituloEntrenamiento, .seccionRutinas .divTextoRutinas .tituloRutinas, .seccionDisciplinas .divTextosDisciplinas .tituloDisciplinas, .seccionDieta .divTextosDieta .tituloDieta, .seccionAcercaDeMi .textosAcercaDeMi .tituloAcercaDeMi, .seccionMisClases #grid .alAireLibre .titulosGrid, .seccionMisClases #grid .enTuGimnasio .titulosGrid, .seccionMisClases #grid .ClientesSatisfechos .titulosGrid, #contacto .tituloContacto {
     font-size: 20px;
     font-weight: bolder;
+    align-self: center;
   }
 }
 
-.PrincipalIndex, .seccionEntrenamiento, .seccionDisciplinas, .seccionRutinas, .seccionDieta, .seccionAcercaDeMi {
+.PrincipalIndex, .seccionEntrenamiento, .seccionRutinas, .seccionDisciplinas, .seccionDieta, .seccionAcercaDeMi {
   padding: 10px;
   margin: 60px 20px 60px 20px;
   background-color: rgba(255, 255, 255, 0.514);
   display: flex;
   justify-content: space-between;
 }
-.PrincipalIndex:hover, .seccionEntrenamiento:hover, .seccionDisciplinas:hover, .seccionRutinas:hover, .seccionDieta:hover, .seccionAcercaDeMi:hover {
+.PrincipalIndex:hover, .seccionEntrenamiento:hover, .seccionRutinas:hover, .seccionDisciplinas:hover, .seccionDieta:hover, .seccionAcercaDeMi:hover {
   background-color: rgba(255, 255, 255, 0.63);
   color: #cc1414;
 }
 @media screen and (max-width: 950px) {
-  .PrincipalIndex, .seccionEntrenamiento, .seccionDisciplinas, .seccionRutinas, .seccionDieta, .seccionAcercaDeMi {
+  .PrincipalIndex, .seccionEntrenamiento, .seccionRutinas, .seccionDisciplinas, .seccionDieta, .seccionAcercaDeMi {
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -612,7 +595,7 @@ h2 {
   }
 }
 
-.seccionEntrenamiento .divTextoEntrenamiento, .seccionDisciplinas .divTextosDisciplinas, .seccionRutinas .divTextoRutinas, .seccionDieta .divTextosDieta, .seccionAcercaDeMi .textosAcercaDeMi {
+.seccionEntrenamiento .divTextoEntrenamiento, .seccionRutinas .divTextoRutinas, .seccionDisciplinas .divTextosDisciplinas, .seccionDieta .divTextosDieta, .seccionAcercaDeMi .textosAcercaDeMi {
   width: 50%;
   margin: 10px;
   padding: 10px;
@@ -622,12 +605,12 @@ h2 {
   text-align: justify;
 }
 @media screen and (max-width: 980px) {
-  .seccionEntrenamiento .divTextoEntrenamiento, .seccionDisciplinas .divTextosDisciplinas, .seccionRutinas .divTextoRutinas, .seccionDieta .divTextosDieta, .seccionAcercaDeMi .textosAcercaDeMi {
+  .seccionEntrenamiento .divTextoEntrenamiento, .seccionRutinas .divTextoRutinas, .seccionDisciplinas .divTextosDisciplinas, .seccionDieta .divTextosDieta, .seccionAcercaDeMi .textosAcercaDeMi {
     width: 100%;
   }
 }
 
-.seccionEntrenamiento .divTextoEntrenamiento .parrafoEntrenamiento, .seccionDisciplinas .divTextosDisciplinas .parrafoDis, .seccionRutinas .divTextoRutinas .parrafoRutinas, .seccionDieta .divTextosDieta .parrafoDieta, .seccionAcercaDeMi .textosAcercaDeMi .parrafoAcercaDeMi {
+.seccionEntrenamiento .divTextoEntrenamiento .parrafoEntrenamiento, .seccionRutinas .divTextoRutinas .parrafoRutinas, .seccionDisciplinas .divTextosDisciplinas .parrafoDis, .seccionDieta .divTextosDieta .parrafoDieta, .seccionAcercaDeMi .textosAcercaDeMi .parrafoAcercaDeMi {
   width: auto;
   height: auto;
   font-size: 20px;
@@ -638,13 +621,14 @@ h2 {
 
 .barraNav {
   display: flex;
-  justify-content: center;
   position: sticky;
   top: 5px;
   width: 100%;
   z-index: 100;
 }
 .barraNav nav {
+  display: flex;
+  align-items: center;
   font-size: 20px;
   line-height: 35px;
   width: 100%;
@@ -652,29 +636,26 @@ h2 {
   margin: 10px 10px 10px 10px;
   background-color: rgba(255, 255, 255, 0.774);
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .barraNav nav {
     padding: 5px;
     margin: 5px;
     line-height: 15px;
     width: 100%;
-    z-index: 100%;
   }
 }
 .barraNav nav ul {
+  display: flex;
+  align-items: center;
   width: 100%;
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }
 @media screen and (max-width: 950px) {
   .barraNav nav ul {
     font-size: 15px;
-    z-index: 100%;
   }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .barraNav nav ul {
     font-size: 15px;
     margin: 10px;
@@ -684,16 +665,17 @@ h2 {
 @media screen and (max-width: 550px) {
   .barraNav nav ul {
     font-size: 10px;
-    z-index: 100%;
   }
 }
 .barraNav nav ul li {
-  width: 100%;
   list-style-image: url(../imagenes/weight-red-small25px.png);
   list-style-position: inside;
+  width: 100%;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .barraNav nav ul li {
+    display: flex;
+    justify-content: space-evenly;
     list-style-image: none;
     width: 80%;
   }
@@ -706,7 +688,7 @@ h2 {
 .barraNav nav ul li a:hover {
   color: #b10909;
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .barraNav nav ul li a {
     color: black;
   }

@@ -2,9 +2,7 @@
 
 
 .barraNav{
-
     display: flex;
-    justify-content: center;
     position: sticky;
     top: 5px;
     width: 100%;
@@ -13,7 +11,9 @@
        
     
     nav{
-
+        
+        display: flex;
+        align-items: center;
         font-size: 20px;
         line-height: 35px;
         width: 100%;
@@ -21,13 +21,14 @@
         margin: 10px 10px 10px 10px; 
         background-color: nth($colores, 11);
 
-        @media screen and (max-width: 770px){
+        @media screen and (max-width: 768px){
 
+            
             padding: 5px;
             margin: 5px;
             line-height: 15px;
             width: 100%;
-            z-index: 100%;
+            
 
             
         }
@@ -35,49 +36,54 @@
         
         
         ul{
-
+            display: flex;
+            align-items: center;
             width: 100%;
             list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-
+                        
+            
             @media screen and (max-width: 950px){
         
                 font-size: 15px;
-                z-index: 100%;
+               
             }
 
-            @media screen and (max-width: 770px){
+            @media screen and (max-width: 768px){
         
                 font-size: 15px;
                 margin: 10px;
                 padding: 5px;
+                
                 
             }
 
             @media screen and (max-width: 550px){
 
                 font-size: 10px;
-                z-index: 100%;
+                
             }
 
             li{
-
-                width: 100%;
                 list-style-image: url(../imagenes/weight-red-small25px.png);
                 list-style-position: inside;
+                width: 100%;
+                
+                
 
-            @media screen and (max-width: 770px){
+            @media screen and (max-width: 768px){
 
+                display: flex;
+                justify-content:space-evenly;
                 list-style-image: none;
                 width: 80%;
+                
             }
 
                 
 
                 
                 a{
+                                        
                     text-decoration: none;
                     color: nth($colores, 7);
                     font-weight: bold;
@@ -86,8 +92,8 @@
                         color: nth($colores, 1);
                     }
 
-                    @media screen and (max-width: 770px){
-                    
+                    @media screen and (max-width: 768px){
+
                         color: nth($colores, 7);
                         &:hover{
 
